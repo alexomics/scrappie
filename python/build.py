@@ -58,7 +58,7 @@ ffibuilder.set_source("libscrappy",
             scrappie_seq_helpers
             util'''.split()
     ],
-    extra_compile_args=['-std=c99', '-msse3', '-O3']
+    extra_compile_args=['-std=c99', '-msse4.1', '-O3']
 )
 
 with open('pyscrap.h', 'r') as fh:
